@@ -9,6 +9,13 @@ package Model;
  *
  * @author CltControl
  */
-public interface Pago {
-    public boolean realizarPago(float monto);
+public class PagoEfectivo implements Pago{
+    protected float monto;
+
+    @Override
+    public boolean realizarPago(float monto) {
+        return true;
+    }
+    
+    
 }
