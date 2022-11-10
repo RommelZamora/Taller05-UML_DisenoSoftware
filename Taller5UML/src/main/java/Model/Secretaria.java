@@ -9,8 +9,10 @@ package Model;
  *
  * @author quint
  */
-public class Secretaria {
+public class Secretaria extends Persona{
    
+    protected Doctor doctor;
+    
     public void verificarCita(){
     }
     

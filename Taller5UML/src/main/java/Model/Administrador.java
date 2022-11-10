@@ -13,6 +13,7 @@ import java.util.ArrayList;
  */
 public class Administrador extends Persona{
         
+    public ArrayList<Persona> personas = new ArrayList<>();
 
     
     public void registraUsuario(){

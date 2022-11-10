@@ -21,8 +21,11 @@ public class Persona {
     protected String direccion;
     protected Date fechaNac;
     
+    
+    // EL CONSTRUCTOR DEBE TENER ADMINISTRADOR Y NO DEBE TENER ADMINISTRADOR
+    
     // la persona es registrada por un adminsitrador 
-    protected Administrador Admin;
+    protected Administrador registradoPor;
     ///------------------------como hacer para que la persona no cree mas instancias de admin
     
     

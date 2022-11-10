@@ -14,6 +14,10 @@ public class Doctor extends Persona{
     protected int regDoctor;
     protected String especialidad;
         
+    protected Secretaria  secretaria;
+    
+    
+    
     
     
     public void recetar(){
@@ -33,6 +37,10 @@ public class Doctor extends Persona{
     
     }
     
+    void ayudadoPor(Secretaria sec ){
+    secretaria= sec;
+    
+    }
  
     
     

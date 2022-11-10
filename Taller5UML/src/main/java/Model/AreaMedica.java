@@ -5,6 +5,8 @@
  */
 package Model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author quint
@@ -12,12 +14,17 @@ package Model;
 public class AreaMedica {
     
     
-    protected Doctor[] doctores;
+    protected ArrayList<Doctor> doctores;
     
-    
+        
     
     protected String especialidad; 
     
     protected float Costo;
+    
+    protected void incluir(Doctor doc){
+       doctores.add(doc);
+    
+    }
     
 }

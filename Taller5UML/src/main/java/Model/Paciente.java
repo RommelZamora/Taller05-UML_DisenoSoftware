@@ -9,7 +9,7 @@ package Model;
  *
  * @author quint
  */
-public class Paciente {
+public class Paciente extends Persona {
     
     protected String email;
     
