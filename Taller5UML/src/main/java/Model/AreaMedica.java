@@ -9,22 +9,21 @@ import java.util.ArrayList;
 
 /**
  *
- * @author quint
+ * @author Grupo 5
  */
 public class AreaMedica {
-    
-    
     protected ArrayList<Doctor> doctores;
-    
-        
-    
     protected String especialidad; 
-    
-    protected float Costo;
+    protected float costo;
+
+    public AreaMedica(String especialidad, float costo) {
+        this.especialidad = especialidad;
+        this.costo = costo;
+        this.doctores = new ArrayList<>();
+    }
     
     protected void incluir(Doctor doc){
        doctores.add(doc);
-    
     }
     
 }

@@ -5,33 +5,30 @@
  */
 package Model;
 
+import java.util.Date;
+import java.util.List;
 import java.util.ArrayList;
 
 /**
  *
- * @author quint
+ * @author Grupo 5
  */
 public class Paciente extends Persona {
     
     protected String email;
-    
-    protected ArrayList<Receta> recetas;
-    
-    protected Cita[] cita= new Cita[1];
-    protected HistoriaClinica[] historiaClinica;
-    
-    public Paciente(){
-        recetas= new ArrayList();
-        
-        historiaClinica= new HistoriaClinica[1];
-    
-    }
+    protected List<Receta> recetas;
+    protected HistoriaClinica historiaClinica;
+    protected Cita cita;
 
-    public Paciente(String email, ArrayList<Receta> recetas, HistoriaClinica[] historiaClinica) {
+    public Paciente(String email, List<Receta> recetas, HistoriaClinica historiaClinica, Cita cita, String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fechaNac, Administrador registradoPor) {
+        super(usuario, clave, nombre, apellido, cedula, direccion, fechaNac, registradoPor);
         this.email = email;
         this.recetas = recetas;
         this.historiaClinica = historiaClinica;
+        this.cita = cita;
     }
+    
+    
     
     public boolean solicitarCita(){
         return false;

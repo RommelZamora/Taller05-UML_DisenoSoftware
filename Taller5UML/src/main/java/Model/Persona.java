@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  *
- * @author quint
+ * @author Grupo 5
  */
 public class Persona {
     
@@ -27,28 +27,26 @@ public class Persona {
     // la persona es registrada por un adminsitrador 
     protected Administrador registradoPor;
     ///------------------------como hacer para que la persona no cree mas instancias de admin
+
+    public Persona(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fechaNac, Administrador registradoPor) {
+        this.usuario = usuario;
+        this.clave = clave;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.cedula = cedula;
+        this.direccion = direccion;
+        this.fechaNac = fechaNac;
+        this.registradoPor = registradoPor;
+    }
     
     
     
     public boolean logIn(){
-    return false;
-        
-        
+        return false;
     }
     
     public boolean logOut(){
-    
         return false;
-                
-    
     }
-    
-    
-    
-    
-    
-    
-    
-    
     
 }

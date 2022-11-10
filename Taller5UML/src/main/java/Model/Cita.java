@@ -8,29 +8,27 @@ import java.time.LocalDateTime;
 
 /**
  *
- * @author Rommel Zamora
+ * @author Grupo 5
  */
 public class Cita {
     protected LocalDateTime fecha;
     protected boolean pagada;
     protected String registradoPor;
-    protected Paciente pacienteReceta;
-    
-    protected Paciente pacienteCita;
+    protected Paciente paciente;
     protected Doctor doctor;
-    
-    
+    protected Pago pago;
 
-    public Cita(LocalDateTime fecha, boolean pagada, String registradoPor, Paciente paciente) {
+    public Cita(LocalDateTime fecha, boolean pagada, String registradoPor, Paciente paciente, Doctor doctor) {
         this.fecha = fecha;
         this.pagada = pagada;
         this.registradoPor = registradoPor;
-        this.pacienteReceta = paciente;
+        this.paciente = paciente;
+        this.doctor = doctor;
     }
-    
     
     public void realizaPago(Pago pago){
         pagada = true;
+        this.pago = pago;
     }
     
 }

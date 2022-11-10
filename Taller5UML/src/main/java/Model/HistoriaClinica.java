@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author CltControl
+ * @author Grupo 5
  */
 public class HistoriaClinica {
     
@@ -18,5 +18,15 @@ public class HistoriaClinica {
     protected ArrayList<String> enfermedades;
     protected ArrayList<String> alergias;
     protected ArrayList<String> otros;
+
+    public HistoriaClinica(int nro, Paciente paciente) {
+        this.nro = nro;
+        this.paciente = paciente;
+        this.enfermedades = new ArrayList<>();
+        this.alergias = new ArrayList<>();
+        this.otros = new ArrayList<>();
+    }
+    
+    
     
 }

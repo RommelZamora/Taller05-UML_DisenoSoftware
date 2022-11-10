@@ -6,7 +6,7 @@ package Model;
 
 /**
  *
- * @author Rommel Zamora
+ * @author Grupo 5
  */
 public class Medicamento {
     protected String medicina;
@@ -24,8 +24,5 @@ public class Medicamento {
         this.unidad = unidad;
         this.receta = receta;
     }
-    
-    
-    
     
 }

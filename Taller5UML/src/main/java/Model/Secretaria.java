@@ -5,21 +5,27 @@
  */
 package Model;
 
+import java.util.Date;
+
 /**
  *
- * @author quint
+ * @author Grupo 5
  */
 public class Secretaria extends Persona{
    
     protected Doctor doctor;
-    
     protected Cita cita;
+
+    public Secretaria(Doctor doctor, Cita cita, String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fechaNac, Administrador registradoPor) {
+        super(usuario, clave, nombre, apellido, cedula, direccion, fechaNac, registradoPor);
+        this.doctor = doctor;
+        this.cita = cita;
+    }
+
     public void verificarCita(){
     }
     
     public void agendarCita(){}
-    
-    
     
     
 }
