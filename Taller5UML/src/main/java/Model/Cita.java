@@ -14,13 +14,18 @@ public class Cita {
     protected LocalDateTime fecha;
     protected boolean pagada;
     protected String registradoPor;
-    protected Paciente paciente;
+    protected Paciente pacienteReceta;
+    
+    protected Paciente pacienteCita;
+    protected Doctor doctor;
+    
+    
 
     public Cita(LocalDateTime fecha, boolean pagada, String registradoPor, Paciente paciente) {
         this.fecha = fecha;
         this.pagada = pagada;
         this.registradoPor = registradoPor;
-        this.paciente = paciente;
+        this.pacienteReceta = paciente;
     }
     
     

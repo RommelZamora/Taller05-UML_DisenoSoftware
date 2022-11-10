@@ -5,6 +5,8 @@
  */
 package Model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author quint
@@ -16,7 +18,9 @@ public class Doctor extends Persona{
         
     protected Secretaria  secretaria;
     
+    protected ArrayList<Cita> citasPendientes = new ArrayList<>();
     
+    protected ArrayList<Receta> recetas = new ArrayList<>();
     
     
     

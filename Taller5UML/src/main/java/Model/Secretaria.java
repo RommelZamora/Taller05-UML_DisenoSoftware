@@ -13,6 +13,7 @@ public class Secretaria extends Persona{
    
     protected Doctor doctor;
     
+    protected Cita cita;
     public void verificarCita(){
     }
     

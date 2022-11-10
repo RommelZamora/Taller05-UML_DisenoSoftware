@@ -14,12 +14,16 @@ import java.util.List;
  *
  * @author Rommel Zamora
  */
+
+
+
 public class Receta {
     protected LocalDateTime fecha;
     protected List<Medicamento> medicamentos ;
     protected List<PlanNutricional> nutricion;
     protected Doctor doctor;
     protected Paciente paciente;
+    
 
     public Receta(LocalDateTime fecha, Doctor doctor, Paciente paciente) {
         this.fecha = fecha;

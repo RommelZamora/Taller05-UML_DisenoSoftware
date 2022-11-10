@@ -12,6 +12,8 @@ import java.util.ArrayList;
  * @author CltControl
  */
 public class HistoriaClinica {
+    
+    protected Paciente paciente;
     protected int nro;
     protected ArrayList<String> enfermedades;
     protected ArrayList<String> alergias;
