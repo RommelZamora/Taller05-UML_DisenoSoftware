@@ -12,6 +12,11 @@ package Model;
 public class PagoPayPal implements Pago{
     protected float monto;
     protected String email;
+    
+    public PagoPayPal(String correo, float valor){
+        monto = valor;
+        email = correo;
+    }
 
     @Override
     public boolean realizarPago(float monto) {

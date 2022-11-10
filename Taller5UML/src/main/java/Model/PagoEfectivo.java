@@ -12,6 +12,10 @@ package Model;
 public class PagoEfectivo implements Pago{
     protected float monto;
 
+    public PagoEfectivo(float valor) {
+        monto = valor;
+    }
+
     @Override
     public boolean realizarPago(float monto) {
         return true;
